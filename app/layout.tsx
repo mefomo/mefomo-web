@@ -40,12 +40,14 @@ export const metadata: Metadata = {
     images: ["/og.jpg"],
     // site: "@vuestroUsuario", // <- si más adelante creáis Twitter/X, añadidlo
   },
-  // (Opcional) colores del navegador móvil
-  themeColor: "#000000",
+
   // (Opcional) iconos extra para iOS
   icons: {
     apple: "/apple-touch-icon.png", // si añadís este archivo a /public
   },
+};
+export const viewport = {
+  themeColor: "#f3eadc",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
