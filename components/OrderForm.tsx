@@ -30,7 +30,8 @@ export default function OrderForm() {
       form.reset();
     } else {
       const err = await res.json();
-      setMessage("❌ Error: " + err.error);
+      setMessage("❌ Error: " + err.error + " — " + (err.detail || ""));
+      console.error(err);
     }
 
     setLoading(false);
